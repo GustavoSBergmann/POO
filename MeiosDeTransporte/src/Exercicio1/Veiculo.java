@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package meiosdetransporte;
+package Exercicio1;
 
 /**
  *
@@ -36,5 +36,14 @@ public class Veiculo {
         System.out.println("Quantidade de rodas: " + qtdRodas);
         System.out.println("Velocidade: "+ velocidade);
         //System.out.println("######################################");
+    }
+    
+    @Override
+    public String toString(){
+        return "\n######################################" + 
+               "\nMarca: " + marca +
+               "\nModelo: " + modelo +
+               "\nQuantidade de rodas: " + qtdRodas +
+               "\nVelocidade: " + velocidade;
     }
 }

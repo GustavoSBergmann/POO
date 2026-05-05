@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package meiosdetransporte;
+package Exercicio1;
 
 /**
  *
@@ -19,6 +19,12 @@ public class Moto extends Automovel{
     public void imprimirInformacoes(){
         super.imprimirInformacoes();
         System.out.println("Tem partida eletrica? " + (partidaEletrica ? "Sim" : "Nao"));
+    }
+    
+    @Override
+    public String toString(){
+        return super.toString() +
+               "\nTem partida eletrica? " + (partidaEletrica ? "Sim" : "Nao");
     }
     
 }

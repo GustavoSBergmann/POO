@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package meiosdetransporte;
+package Exercicio1;
 
 /**
  *
@@ -20,5 +20,10 @@ public class Automovel extends Veiculo{
         super.imprimirInformacoes();
         System.out.println("Potencia do motor: " + potenciaDoMotor);
     }
-    
+
+    @Override
+    public String toString(){
+        return super.toString() +
+               "\nPotencia do motor: " + potenciaDoMotor;
+    }
 }
