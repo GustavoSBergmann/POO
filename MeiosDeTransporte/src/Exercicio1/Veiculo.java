@@ -46,4 +46,26 @@ public class Veiculo {
                "\nQuantidade de rodas: " + qtdRodas +
                "\nVelocidade: " + velocidade;
     }
+    
+    @Override
+    public boolean equals(Object obj) {
+        // 1. Verificação de referência (se é o mesmo objeto)
+        if (this == obj) {
+            return true;
+        }
+
+        // 2. Verificação de nulo e tipos diferentes
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+
+        // 3. Cast para o tipo correto
+        Veiculo outro = (Veiculo) obj;
+
+        // 4. Comparação dos atributos relevantes (ex: sku)
+        //return modelo.equals(outro.modelo);
+        if (qtdRodas == outro.qtdRodas)
+            return true;
+        return false;
+    }
 }
